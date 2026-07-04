@@ -1,16 +1,16 @@
 {
-  "name": "bank-transaction-backend",
+  "name": "transaction-summary-backend",
   "version": "1.0.0",
-  "description": "Bank Transaction Summary API",
+  "description": "Bank Transaction Summary Backend",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "uuid": "^11.0.3"
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

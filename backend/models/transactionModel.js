@@ -3,24 +3,17 @@ class Transaction {
     constructor(
         id,
         message,
-        merchant,
         amount,
-        type,
-        category,
-        expectedSavings,
-        date
+        category = "Miscellaneous",
+        expectedSavings = 0
     ) {
-
         this.id = id;
         this.message = message;
-        this.merchant = merchant;
         this.amount = amount;
-        this.type = type;
         this.category = category;
         this.expectedSavings = expectedSavings;
-        this.date = date;
     }
 
 }
 
-module.exports = Transaction;
+export default Transaction;

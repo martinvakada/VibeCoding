@@ -1,0 +1,197 @@
+/* ===== Global ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* ===== Dashboard ===== */
+
+.dashboard {
+    min-height: 100vh;
+}
+
+.dashboard-content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* ===== Navbar ===== */
+
+.navbar {
+    background: #1e3a8a;
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.navbar h1 {
+    font-size: 28px;
+}
+
+.navbar p {
+    margin-top: 5px;
+    color: #dbeafe;
+}
+
+/* ===== Analytics ===== */
+
+.analytics-container {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.analytics-container h2 {
+    margin-bottom: 20px;
+}
+
+.analytics-item {
+    margin-bottom: 18px;
+}
+
+.analytics-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+/* ===== Transaction List ===== */
+
+.transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== Transaction Card ===== */
+
+.transaction-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.transaction-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-message {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.transaction-amount {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.credit {
+    color: green;
+}
+
+.debit {
+    color: crimson;
+}
+
+.transaction-bottom {
+    margin-top: 20px;
+}
+
+/* ===== Dropdown ===== */
+
+.category-dropdown {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 220px;
+    font-size: 15px;
+    outline: none;
+}
+
+.category-dropdown:focus {
+    border-color: #2563eb;
+}
+
+/* ===== Cashback ===== */
+
+.cashback-badge {
+    margin-top: 18px;
+    background: #dcfce7;
+    color: #166534;
+    border-left: 5px solid green;
+    padding: 12px 15px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cashback-badge strong {
+    font-size: 18px;
+}
+
+/* ===== Loading ===== */
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 24px;
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:768px){
+
+    .dashboard-content{
+        width:95%;
+    }
+
+    .transaction-top{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .analytics-header{
+        font-size:14px;
+    }
+
+    .navbar h1{
+        font-size:22px;
+    }
+
+}
