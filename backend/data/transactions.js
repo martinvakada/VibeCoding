@@ -1,37 +1,44 @@
-import Transaction from "../models/transactionModel.js";
-
 const transactions = [
-
-    new Transaction(
-        1,
-        "Paid Rs.250 to Zomato",
-        -250
-    ),
-
-    new Transaction(
-        2,
-        "Paid Rs.520 to Uber",
-        -520
-    ),
-
-    new Transaction(
-        3,
-        "Received Rs.45000 from ABC Pvt Ltd Salary",
-        45000
-    ),
-
-    new Transaction(
-        4,
-        "Paid Rs.180 to Swiggy Cashback",
-        -180
-    ),
-
-    new Transaction(
-        5,
-        "Paid Rs.600 to Amazon",
-        -600
-    )
-
+  {
+    id: 1,
+    message: "Paid ₹250 to Zomato",
+    amount: 250,
+    type: "Debit",
+    category: "Food",
+    expectedSavings: 25
+  },
+  {
+    id: 2,
+    message: "Paid ₹450 to Uber",
+    amount: 450,
+    type: "Debit",
+    category: "Travel",
+    expectedSavings: 0
+  },
+  {
+    id: 3,
+    message: "Received ₹45000 from Infosys",
+    amount: 45000,
+    type: "Credit",
+    category: "Salary",
+    expectedSavings: 0
+  },
+  {
+    id: 4,
+    message: "Paid ₹1200 to Amazon Cashback",
+    amount: 1200,
+    type: "Debit",
+    category: "Miscellaneous",
+    expectedSavings: 120
+  },
+  {
+    id: 5,
+    message: "Paid ₹350 to Swiggy",
+    amount: 350,
+    type: "Debit",
+    category: "Food",
+    expectedSavings: 35
+  }
 ];
 
 export default transactions;
